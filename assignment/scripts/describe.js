@@ -26,10 +26,10 @@ if (number >= 2) {
 
 
 // 1. WRITE YOUR DESCRIPTION HERE
-// 
-// 
-// 
-//
+// We create a variable called name and set is to Dane as a string variable.
+// Next we have conditional statement, if the variable name is exactly equivalent to the string Mary,
+// we console.log 'Hi, Mary!' and if name is not exactly equivalent to the string Mary, 
+// we console.log 'How do you do?'  In this example we would console.log 'How do you do?'
 
 //CODE
 /*
@@ -45,10 +45,11 @@ if (name === 'Mary') {
 */
 
 // 2. WRITE YOUR DESCRIPTION HERE
-// 
-// 
-// 
-//
+// In this example, we create a variable called secret with no assignment. Next, we create a number variable called code and set to 123.
+// Next we have a conditional that checks if code is equal to 123.  If code is equal to 123, the variable secret is set to the string 'super'
+// and then the variable code is changed to the resultant of the initial value of 123 multiplied by 2. A second conditional is performed to
+// check if the new value of code is greater than 250.  If the new value of variable code is greater than 250, the variable secret is changed
+// to the string 'duper'. Finally, the console.log for the variable is produced.  In this case, the console.log is 'super'.
 
 //CODE
 /*
@@ -70,10 +71,12 @@ console.log(secret)
 */
 
 // 3. WRITE YOUR DESCRIPTION HERE
-// 
-// 
-// 
-//
+// We create a boolean variable isStudent set to true, a numerical variable age set to 34, and a numerical variable zip set to 55407.
+// A conditional is run.  If isStudent is equal to true and the zip is greater than 80000, console.log 'You're a student on the West Coast!'
+// if either of those conditions are not correct, the conditional progresses.  Next, if isStudent is equal to false or the age is less than 
+// 30, console.log 'What are your hobbies?'.  If both of these conditions are incorrect, the conditional progresses again.  If isStudent is 
+// equal to true, console.log 'Welcome to Prime!'  The conditional ends there because the boolean variable can only be true or false and those
+// parameters would have been met by the third conditional, so the final console.log 'How about the weather?' would never be produced.
 
 //CODE
 /*
@@ -130,12 +133,15 @@ if (number >= 2) {
 // -- it is, so we set colorOne and colorTwo to 'purple'
 
 /*
+// Wrong color set.  should be: let colorOne = 'blue';
 let colorOne = 'red';
+// Wrong color set.  should be: let colorOne = 'red';
 let colorTwo = 'blue';
 let mix = true;
 
 if (mix === true) {
   colorOne = 'purple';
+  // forgot to set colorTwo to purple as well. should add here: colorTwo = 'purple';
 }
 */
 
@@ -145,6 +151,9 @@ if (mix === true) {
 
 /*
 let temp = 40;
+// If time is set as a constant variable, then it will never change and we will always be throwing the food away.
+// if we use a numerical variable, the time can change so there could be instances where the conditional of time >= 4 could be 
+// correct or incorrect.
 const time = 4;
 
 if (temp > 39 || time >= 4) {
