@@ -153,7 +153,7 @@ if (mix === true) {
 let temp = 40;
 // If time is set as a constant variable, then it will never change and we will always be throwing the food away.
 // if we use a numerical variable, the time can change so there could be instances where the conditional of time >= 4 could be 
-// correct or incorrect.
+// correct or incorrect.  Use: let time = 4;
 const time = 4;
 
 if (temp > 39 || time >= 4) {
@@ -169,6 +169,9 @@ if (temp > 39 || time >= 4) {
 let age = 21;
 const minAge = 21;
 
+// If minAge is assumed to be the minimum age something can be, then it doesn't make sense to have a conditional of minAge being <=
+// I would change it to: (minAge < age)
+// With that change, the variable age with value 21 would produce:  console.log 'enter'
 if(minAge <= age) {
   console.log('no entry');
 } else {
